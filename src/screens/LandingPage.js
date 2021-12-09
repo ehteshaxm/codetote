@@ -56,7 +56,7 @@ const LandingPage = () => {
           </h1>
         </div>
         <div className="flex justify-center relative z-10">
-          <div className="grid lg:grid-flow-col gap-x-36">
+          <div className="grid lg:grid-flow-col gap-x-32">
             {pages.map((page) => (
               <Section heading={page.name} data={page.resource} />
             ))}
