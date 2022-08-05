@@ -25,7 +25,7 @@ const LandingPage = () => {
       <div className='max-w-screen-xl mx-auto z-10 px-5'>
         <nav className='flex justify-between items-center py-4 mb-36'>
           <h1 className='font-black text-2xl md:text-3xl font-poppins text-gray-50 '>
-            Codetote
+            Codebag
           </h1>
           <a
             href='https://twitter.com/ehteshaxm'
