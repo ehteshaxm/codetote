@@ -14,7 +14,7 @@ const ContentPage = () => {
   }, [pathname]);
 
   return (
-    <div class='p-4 bg-backblack min-h-screen relative overflow-hidden'>
+    <div class='p-4 min-h-screen relative overflow-hidden'>
       <img
         src='/accent3.svg'
         alt='blob'
@@ -25,13 +25,13 @@ const ContentPage = () => {
         alt='blob'
         className='absolute bottom-0 right-0 z-0 animate-blob'
       />
-      <div className='max-w-screen-xl mx-auto z-10'>
+      <div className='max-w-screen-2xl mx-auto z-10'>
         <nav className='flex flex-row-reverse items-center p-6 pl-0 mb-36'>
           <a
             href='https://twitter.com/ehteshaxm'
             target='_blank'
             rel='noreferrer'
-            className='flex items-center text-gray-400 hover:text-blue-700 transition duration-500 ease-in-out z-10'
+            className='flex items-center hover:text-blue-700 transition duration-500 ease-in-out z-10'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -51,7 +51,7 @@ const ContentPage = () => {
           </a>
         </nav>
         <div className='text-center'>
-          <h1 className='font-black text-5xl md:text-7xl font-poppins text-gray-50 z-10 mb-44'>
+          <h1 className='font-black text-5xl md:text-7xl font-poppins z-10 mb-44'>
             {par.id}
           </h1>
         </div>
