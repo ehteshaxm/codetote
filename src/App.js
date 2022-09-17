@@ -3,6 +3,7 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import ContentPage from './screens/ContentPage';
 import LandingPage from './screens/LandingPage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path='/' element={<LandingPage />} />
         <Route path='/resource/:id' element={<ContentPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

@@ -7,7 +7,7 @@ const Section = ({ heading, data }) => {
       <p className='font-poppins font-bold text-3xl md:text-4xl mb-12 mt-12'>
         {heading}
       </p>
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap sm:flex-row flex-col justify-center items-center sm:justify-start'>
         {data.map((set) => (
           <ResourceContainer
             internal={true}
@@ -15,6 +15,7 @@ const Section = ({ heading, data }) => {
             link={set.name}
             description={set.description}
             image={set.image}
+            tags={set.tags}
           />
         ))}
       </div>

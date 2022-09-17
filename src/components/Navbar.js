@@ -1,43 +1,41 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { TwitterShareButton } from 'react-share';
 
 const Navbar = () => {
   return (
-    <div className='bg-black text-white'>
-      <nav className='px-5 max-w-screen-2xl sm:mx-auto flex justify-between items-center py-4 mb-36'>
-        <h1 className='font-black text-2xl md:text-3xl font-poppins'>
-          CodeBag
-        </h1>
-        <a
-          href='https://twitter.com/ehteshaxm'
-          target='_blank'
-          rel='noreferrer'
+    <div className='text-white bg-lightBlack'>
+      <nav className='px-5 max-w-screen-2xl sm:mx-auto flex justify-between items-center py-4'>
+        <Link to={'/'}>
+          <div className='flex items-end'>
+            <img src='/backpack.png' alt='backpack' className='w-10 mr-2' />
+            <h1 className='font-black text-2xl md:text-3xl font-poppins'>
+              Codetote
+            </h1>
+          </div>
+        </Link>
+        <TwitterShareButton
+          url={'https://www.codetote.com'}
+          title={
+            'Free Access to 800+ Design and Development Resources, Full of great Icons, Illustrations, Vectors and more'
+          }
+          via={'ehteshaxm'}
         >
-          <button className='bg-twitterBlue flex justify-center items-center sm:pl-4 sm:pr-2 px-1 rounded-md font-semibold hover:bg-twitterHover'>
-            <p className='hidden sm:inline-block'>Follow on Twitter</p>
+          <button className='bg-twitterBlue flex justify-center items-center sm:pl-4 sm:pr-2 sm:py-2 p-1 rounded-md font-semibold hover:bg-twitterHover transform transition duration-500'>
+            <p className='hidden sm:inline-block'>Share on Twitter</p>
             <svg
+              fill='#fff'
               xmlns='http://www.w3.org/2000/svg'
-              viewBox='0 0 28.87 28.87'
-              className='w-10 hover:bg-twitterHover'
+              viewBox='0 0 30 30'
+              width='25px'
+              height='25px'
+              className='mx-2'
             >
-              <g data-name='Layer 2'>
-                <g data-name='Layer 1'>
-                  <rect
-                    width='28.87'
-                    height='28.87'
-                    fill='#00c7ff'
-                    rx='6.48'
-                    ry='6.48'
-                  />
-                  <path
-                    fill='#fff'
-                    fill-rule='evenodd'
-                    d='M11.74 18.11a3.29 3.29 0 0 1-3.05-2.28 3.26 3.26 0 0 0 1.41 0A3.28 3.28 0 0 1 8 14.26a3.18 3.18 0 0 1-.48-1.75 3.24 3.24 0 0 0 1.46.4 3.3 3.3 0 0 1-1.35-2A3.25 3.25 0 0 1 8 8.54 9.39 9.39 0 0 0 14.76 12c0-.13 0-.24-.05-.36a3.28 3.28 0 0 1 5.58-2.74.17.17 0 0 0 .17.05 6.6 6.6 0 0 0 1.91-.73A3.36 3.36 0 0 1 21 10a6.3 6.3 0 0 0 1.83-.49l-.33.49a6.44 6.44 0 0 1-1.19 1.13.11.11 0 0 0-.05.1 9.09 9.09 0 0 1-.06 1.46 9.66 9.66 0 0 1-.85 2.92 9.44 9.44 0 0 1-1.77 2.59 8.77 8.77 0 0 1-4.51 2.51 9.79 9.79 0 0 1-1.83.22A9.27 9.27 0 0 1 7 19.52l-.08-.05a6.64 6.64 0 0 0 3.26-.47 6.53 6.53 0 0 0 1.56-.89z'
-                  />
-                </g>
-              </g>
+              {' '}
+              <path d='M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z' />
             </svg>
           </button>
-        </a>
+        </TwitterShareButton>
       </nav>
     </div>
   );
